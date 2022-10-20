@@ -1,0 +1,53 @@
+POST http://localhost:5000/api/auth/createuser
+content-type: application/json
+
+{
+   "username":"",
+   "password":"rkosare1234",
+   "email":"rk123@gmail.com"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+content-type: application/json
+
+{
+   "email":"",
+   "password":"rkosare1"
+   
+}
+
+
+### 
+GET http://localhost:5000/api/auth/isauthorized
+###
+GET http://localhost:5000/api/post/getposts
+
+### 
+GET http://localhost:5000/api/post/getpost
+
+
+
+
+###
+
+POST http://localhost:5000/post/createpost
+Authorization:Baerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJrb3NhcmUxMjM0IiwiaWF0IjoxNjYzOTYzMDU0fQ.rhIlB28AYz5yZqQfJBqsgFiTJnwhrRq0JOwG4HVlDDc
+content-type: application/json
+
+{
+   "postTitle":"the best programing practices",
+   "postContaint":"the best programing practices",
+   "tags":"coading"
+}
+
+
+###
+GET http://localhost:5000/auth/logout
+Authorization:Baerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJrb3NhcmUxMjM0IiwiaWF0IjoxNjY0MTMxNDcxfQ.cVP7xj5bOvOIgrta6IhudkEQlxH1YN-2wO2VfWzrLJM
+content-type: application/json
+
+{
+   "access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJrb3NhcmUxMjM0IiwiaWF0IjoxNjY0MTMxNTY5fQ.AMrhqpig2UApbXk8aDj1Jpw6rF4LEApgk7xJ_rzPBPs"
+}
+
