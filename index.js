@@ -11,6 +11,7 @@ const fs = require('fs')
 const authRoutes = require("./auth/authenticationRoutes");
 const postRoutes = require("./post/postRoutes");
 const codeRoutes = require("./coderoutes/codeRoutes");
+const problemRoutes = require("./problemroutes/problemRoutes");
 
 
 const app = express();
@@ -42,7 +43,9 @@ app.use("/api/auth", authRoutes);
 //create post route
 app.use("/api/post", postRoutes);
 
+//problems routes
 
+app.use("/api/problems",problemRoutes);
 
 app.listen(5000, () => {
   console.log("app is running on port 5000");

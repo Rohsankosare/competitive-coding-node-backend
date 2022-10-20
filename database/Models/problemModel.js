@@ -6,7 +6,7 @@ const problemSchema = mongoose.Schema({
     required: true,
   },
 
-  problemStatement: {
+  problemDes: {
     type: String,
     required: true,
   },
@@ -25,5 +25,5 @@ const problemSchema = mongoose.Schema({
   testCase: []
 });
 
-const problemModel = mongoose.model("problem",problemSchema);
-module.exports = problemModel;
+const ProblemModel = mongoose.model("problem",problemSchema);
+module.exports = ProblemModel;
